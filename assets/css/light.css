@@ -1,0 +1,28 @@
+/* light.css: Estilos para el modo claro */
+
+/* Fondo y texto */
+body {
+    background-color: white;
+    color: #333;
+}
+
+header,
+footer {
+    background-color: #007bff;
+    color: white;
+}
+
+.card {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.card:hover {
+    background-color: #e2e6ea;
+}
+
+button {
+    color: #333;
+}
+
+/* Otros estilos específicos para el modo claro (si los tienes) */

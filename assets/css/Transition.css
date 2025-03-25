@@ -1,0 +1,41 @@
+/* transitions.css: Estilos para transiciones comunes */
+
+/* Transiciones generales */
+body {
+    padding-top: 4%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header,
+footer {
+    transition: background-color 0.5s ease;
+}
+
+.card {
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    background-color: #e2e6ea;
+    transition: background-color 0.3s ease;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Efectos de los íconos */
+.card-body i {
+    transition: transform 1.0s ease, color 0.3s ease;
+}
+
+.card:hover .tech-icon {
+    transform: scale(1.1);
+    color: #1b7f02;
+}
+
+/* Hover sobre las tarjetas */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}

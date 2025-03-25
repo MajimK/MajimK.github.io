@@ -1,0 +1,28 @@
+/* dark.css: Estilos para el modo oscuro */
+
+/* Fondo y texto */
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: white;
+}
+
+.card {
+    background-color: #444;
+    color: #fff;
+}
+
+.card:hover {
+    background-color: #555;
+}
+
+button {
+    color: #fff;
+}
+
+/* Otros estilos específicos para el modo oscuro (si los tienes) */
