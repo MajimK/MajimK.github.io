@@ -1,2 +1,2 @@
 # MajimK.github.io
-mi Portafolios: [Kevin Majim Ortega Alvarez](https://majimk.github.io/)
+Enlace del portafolios [https://majimk.github.io/](https://majimk.github.io/)
