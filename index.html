@@ -1,64 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi Portafolio - Inicio</title>
+    <title>My Portfolio - Home</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/5.0.0/css/flag-icon.min.css">
 
-
     <link rel="stylesheet" href="assets/css/Transition.css">
-
-    <!-- Archivo para el modo claro (inicialmente habilitado) -->
     <link id="lightStylesheet" rel="stylesheet" href="assets/css/light.css">
-
-    <!-- Archivo para el modo oscuro (inicialmente deshabilitado) -->
     <link id="darkStylesheet" rel="stylesheet" href="assets/css/dark.css" disabled>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
-        <div class="container-fluid ">
-            <div class="navbar-brand">
-                <i class="fas fa-briefcase" style="font-size: 2rem; color: #f8f9fa;"></i>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-briefcase"></i> <span>My Portfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">About me</a>
+                        <a class="nav-link text-white" href="index.html">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="works.html">Works</a>
+                        <a class="nav-link active text-white" href="works.html">Works</a>
                     </li>
                 </ul>
-            </div>
-
-            <div class="dropdown navbar-brand">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="assets/images/reino-unido.png" alt="English" style="width: 30px; height: auto;"> English
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            <img src="assets/images/reino-unido.png" alt="English" style="width: 30px; height: auto;">
-                            English
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            <img src="assets/images/espana.png" alt="Español" style="width: 30px; height: auto;">
-                            Español
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="navbar-nav ms-auto">
-                <button class="btn btn-outline-light" id="darkModeToggle" title="Modo Oscuro">
+                <button class="btn btn-outline-light ms-3" id="darkModeToggle" title="Dark Mode">
                     <i class="fas fa-sun" id="themeIcon"></i>
                 </button>
                 <script src="assets/scripts/changeMode.js"></script>
@@ -66,27 +41,28 @@
         </div>
     </nav>
 
-
-    <!-- Sobre mí -->
-    <section id="sobre-mi" class="container my-5">
-        <h2 class="text-center mb-4">Sobre Mí</h2>
+    <!-- About Me -->
+    <section id="about-me" class="container my-5">
+        <h2 class="text-center mb-4">Kevin Majim Ortega Alvarez</h2>
         <div class="row">
             <div class="col-md-6">
-                <p>Hola, soy [Tu Nombre], un recién graduado en Ciencias de la Computación. Me apasiona la programación,
-                    el diseño de software y siempre estoy buscando nuevos desafíos para mejorar mis habilidades.</p>
+                <p>Hello, I am Kevin Majim Ortega Alvarez, a recent graduate in Computer Science. I am passionate about
+                    programming, software design, and game development, and I am always looking for new challenges to
+                    improve my skills.</p>
             </div>
             <div class="col-md-6">
-                <p>Mis principales áreas de interés son el desarrollo web, la programación backend, y la inteligencia
-                    artificial. Busco proyectos que me permitan aprender y colaborar con otros profesionales.</p>
+                <p>My main areas of interest are web development, backend programming, artificial intelligence, and
+                    game development. I am looking for projects that allow me to learn and collaborate with other
+                    professionals.</p>
             </div>
         </div>
     </section>
 
-    <section id="habilidades" class="container my-5">
-        <h2 class="text-center mb-4">Habilidades y Tecnologías</h2>
-        <!-- Lenguajes de Programación -->
+    <section id="skills" class="container my-5">
+        <h2 class="text-center mb-4">Skills & Technologies</h2>
+        <!-- Programming Languages -->
         <div>
-            <h4>Lenguajes de Programación</h4>
+            <h4>Programming Languages</h4>
             <div class="row">
                 <div class="col-6 mb-4">
                     <div class="card text-center">
@@ -104,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 mb-4 ">
+                <div class="col-6 mb-4">
                     <div class="card text-center">
                         <div class="card-body">
                             <i class="fas fa-code fa-3x tech-icon"></i>
@@ -115,9 +91,9 @@
             </div>
         </div>
 
-        <!-- Tecnologías y Herramientas -->
+        <!-- Technologies & Tools -->
         <div>
-            <h4>Tecnologías y Herramientas</h4>
+            <h4>Technologies & Tools</h4>
             <div class="row">
                 <div class="col-6 mb-4">
                     <div class="card text-center">
@@ -167,107 +143,64 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-6 mb-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-docker fa-3x tech-icon"></i>
+                            <h5 class="card-title">Docker</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-
-    <!-- Formación -->
-    <section id="formacion" class="container my-5">
-        <h2 class="text-center mb-4"> <i class="fa-solid fa-graduation-cap"></i>Formación Académica <i
+    <!-- Education -->
+    <section id="education" class="container my-5">
+        <h2 class="text-center mb-4"><i class="fa-solid fa-graduation-cap"></i> Academic Background <i
                 class="fa-solid fa-graduation-cap"></i></h2>
         <div class="row">
             <div class="col-md-12 text-center">
-                <h4>Licenciado en Ciencias de la Computación</h4>
-                <p>Universidad de La Habana</p>
+                <h4>Bachelor's Degree in Computer Science</h4>
+                <p>University of Havana</p>
             </div>
             <div class="col-md-12 text-center">
-                <h4>Idiomas</h4>
-                <p>Español: Nativo</p>
-                <p>Ingles: B1</p>
+                <h4><i class="fas fa-globe"></i> Languages <i class="fas fa-globe"></i></h4>
+                <p>Spanish: Native</p>
+                <p>English: B1</p>
             </div>
         </div>
     </section>
 
-    <!-- Experiencia -->
-    <section id="experiencia" class="container my-5">
-        <h2 class="text-center mb-4">Experiencia</h2>
-
-        <!-- Internship -->
-        <div class="row mb-5">
-            <div class="col-md-12 text-center">
-                <h4>Internship en Desarrollo Web</h4>
-                <p><strong>Compañía: [Nombre de la Compañía]</strong></p>
-                <p>Duración: [Fecha de inicio] - [Fecha de finalización]</p>
-                <ul class="no-bullets">
-                    <li>Desarrollo de aplicaciones web utilizando HTML, CSS y JavaScript.</li>
-                    <li>Colaboración en proyectos backend usando Node.js y Express.</li>
-                    <li>Implementación de bases de datos con MongoDB y SQL.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Administrador de Redes -->
-        <div class="row mb-5">
-            <div class="col-md-12 text-center">
-                <h4>Administrador de Redes</h4>
-                <p><strong>Nodo Central - Universidad de La Habana</strong></p>
-                <p>Duración: [Fecha de inicio] - Actualidad</p>
-                <ul class="no-bullets">
-                    <li>Gestión y mantenimiento de infraestructura de red del campus principal</li>
-                    <li>Configuración de dispositivos de red (routers, switches, firewalls)</li>
-                    <li>Implementación de políticas de seguridad y monitoreo de red</li>
-                    <li>Virtualización de servidores y despliegue de servicios en la nube</li>
-                    <li>Soporte técnico avanzado a la comunidad universitaria</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Backend Developer -->
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h4>Backend Developer</h4>
-                <p><strong>Compañía: [Nombre de la Compañía/Freelance]</strong></p>
-                <p>Duración: [Fecha de inicio] - [Fecha de finalización/Actualidad]</p>
-                <ul class="no-bullets">
-                    <li>Desarrollo de APIs RESTful con Python/Django y Node.js</li>
-                    <li>Diseño y optimización de bases de datos relacionales y no relacionales</li>
-                    <li>Implementación de sistemas de autenticación JWT y OAuth</li>
-                    <li>Integración de sistemas de pago y servicios terceros</li>
-                    <li>Dockerización de aplicaciones y configuración de CI/CD</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="container my-5">
-        <h2 class="text-center mb-4">Contacto</h2>
-        <form action="mailto:tuemail@example.com" method="post" enctype="text/plain">
+    <!-- Contact -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact</h2>
+        <form action="mailto:kevinmajim01@gmail.com" method="post" enctype="text/plain">
             <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
+                <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
+                <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label>
+                <label for="message" class="form-label">Message</label>
                 <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-success text-white py-4 text-center">
-        <p>&copy; 2025 [Tu Nombre] | Todos los derechos reservados.</p>
-        <p>Contacto: <a href="mailto:tuemail@example.com" class="text-white">tuemail@example.com</a></p>
+        <p>&copy; <span id="currentYear"></span> Kevin Majim Ortega Alvarez | All rights reserved.</p>
+        <p>Contact: <a href="mailto:kevinmajim01@gmail.com" class="text-white">kevinmajim01@gmail.com</a></p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
 </body>
 
 </html>
